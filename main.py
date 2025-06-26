@@ -66,7 +66,7 @@ xml_str = ET.tostring(root, encoding='unicode', method='xml')
 # Print RAW (one-liner)
 print(xml_str)
 
-
+# Prettify XML
 reparsed = xml.dom.minidom.parseString(xml_str)
 pretty_xml = reparsed.toprettyxml()
 
